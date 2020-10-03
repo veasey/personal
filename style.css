@@ -54,7 +54,7 @@ h2 {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 1em 2em;
+  padding: 0.5em 1em;
   transition: 0.3s;
 }
 .tab button:hover {
