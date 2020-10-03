@@ -1,8 +1,5 @@
 // colours
-
-@color-brand: #afeeee; // light cyan
-@color-second: #afeecf; // light green
-@color-third: #afcfee; // blue
+@color-brand: #ffccff;
 @mobile-width: 620px;
 
 // global styling
@@ -15,6 +12,23 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   margin: 0;
 }
+
+/* styles */
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1, h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-shadow: 2px 2px @color-brand;
+}
+
 
 /* layout */
 
@@ -39,12 +53,10 @@ body {
 
 .header {
 
-  padding-top: 2em;
-  padding-bottom: 3em;
-
-  background-color: @color-brand;
+  padding: 2em 0;
+  background-color: white;
   font-size: 1.5em;
-  border-bottom: 1px solid white;
+  text-align: center;
 
   h1, h1 a {
     color: black;
@@ -72,6 +84,7 @@ body {
       font-size: 1.25em;
       transition: 0.4s;
       margin: 0.25em auto;
+      margin-top: 0.25em;
     }
 
     p {
@@ -80,43 +93,22 @@ body {
   }
 }
 
-/* styles */
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: darken(@color-third, 50%);
-
-  &:hover {
-    text-decoration: underline;
-  }
-
-  &:visited {
-    // color: blue;
-  }
-}
-
-h1, h2 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  text-shadow: 2px 2px @color-brand;
-}
-
 // tabs
 
 .tab {
-  overflow: hidden;
-  border: 1px solid @color-brand;
+
   background-color: lighten(@color-brand, 5%);
+  text-align: center;
 
   button {
-    font-size: 1em;
+    display: inline-block;
+    font-size: 1.25em;
     background-color: inherit;
-    float: left;
+    float: none;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 1em 2em;
     transition: 0.3s;
 
     &:hover {
@@ -124,16 +116,13 @@ h1, h2 {
     }
 
     &.active {
-      background-color: darken(@color-brand, 25%);
+      text-decoration: underline;
     }
   }
 }
 
 .tabcontent {
   display: none;
-  padding: 1em 2em;
-  border: 1px solid @color-brand;
-  border-top: none;
   animation: fadeEffect 1s;
 }
 
@@ -152,6 +141,7 @@ h1, h2 {
     margin: 0.25em;
     font-size: 1.15em;
 
+    color: black;
     border-right: 1px solid darken(@color-brand, 25%);
     border-bottom: 1px solid darken(@color-brand, 25%);
 
@@ -192,17 +182,6 @@ table {
     &:hover {
       background: lighten(@color-brand, 15%);
     }
-
-  }
-}
-
-// grid
-.grid {
-  display: flex;
-
-  div {
-
-    width: 50%;
 
   }
 }
