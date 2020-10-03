@@ -1,37 +1,25 @@
-$(function () {
-
-  styleHeader();
+$( document ).ready(function() {
   displayEmail();
 
-  // make header follow top of screen
+  $('body').css('padding-top', $('.header').height());
   $(document).on('scroll', function () {
     styleHeader();
   });
-
 });
 
 function styleHeader() {
-
-  console.log($('.header').height());
-
   if ($(window).scrollTop() > 0) {
-    $('.header').addClass('sticky');
-    $('body').css('padding-top', $('.header').height());
+    $('.header').css('font-size','1em');
   } else {
-    $('.header').removeClass('sticky');
-    $('body').removeClass('sticky');
-    $('body').css('padding-top', 0);
+    $('.header').css('font-size','1.5em');
   }
+  $('body').css('padding-top', $('.header').height());
 }
 
-// tab expander
 $('.tablinks').click(function() {
-
   var link = $(this).data('link');
-
   $('.tablinks').removeClass('active');
   $(this).addClass('active');
-
   $('.tabcontent').hide();
   $('#' + link).show();
 });
@@ -39,7 +27,6 @@ $('.tablinks').click(function() {
 $('.tablinks').first().addClass('active');
 $('.tabcontent').first().show();
 
-// stop bots getting my email... hopefully.
 function displayEmail() {
   var first = 'clint';
   var second = 'veasey';

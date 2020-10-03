@@ -29,71 +29,33 @@ h1, h2 {
   text-shadow: 2px 2px @color-brand;
 }
 
-
-/* layout */
-
 .container {
   padding: 0.25em;
   margin: auto;
   max-width: 640px;
 }
 
-  .row {
-     display: flex;
-  }
-  .col {
-    flex-basis: auto;
-  }
-
-// other styles
-
-.intro {
-  font-size: 1.25em;
-}
-
 .header {
 
-  padding: 2em 0;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   background-color: white;
   font-size: 1.5em;
   text-align: center;
 
   h1, h1 a {
     color: black;
-    margin-bottom: 0;
-  }
-
-  h2 {
-    margin-top: 0;
+    margin: 0.5em 0;
   }
 
   a:hover {
     text-decoration: none;
   }
-
-  &.sticky {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0;
-
-    h1, h2 {
-      display: inline-block;
-      font-size: 1.25em;
-      transition: 0.4s;
-      margin: 0.25em auto;
-      margin-top: 0.25em;
-    }
-
-    p {
-      display: none;
-    }
-  }
 }
-
-// tabs
 
 .tab {
 
@@ -161,8 +123,6 @@ h1, h2 {
   }
 }
 
-// table
-
 table {
   border-collapse: collapse;
   width: 100%;
@@ -189,5 +149,5 @@ table {
 .footer {
   text-align: right;
   margin-top: 2.5em;
-  color: #777;
+  color: #555;
 }
