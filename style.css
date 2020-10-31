@@ -6,6 +6,9 @@ body {
   margin: 0;
 }
 /* styles */
+img {
+  max-width: 100%;
+}
 a {
   text-decoration: none;
   cursor: pointer;
@@ -17,7 +20,7 @@ h1,
 h2 {
   margin-top: 2em;
   margin-bottom: 1em;
-  text-shadow: 2px 2px #ffccff;
+  text-shadow: 2px 2px #8BA8FF;
 }
 .container {
   padding: 0.25em;
@@ -34,7 +37,7 @@ h2 {
   font-size: 1.5em;
   text-align: center;
   z-index: 999;
-  border-bottom: 1px solid #ffccff;
+  border-bottom: 1px solid #8BA8FF;
 }
 .header h1,
 .header h1 a {
@@ -45,7 +48,7 @@ h2 {
   text-decoration: none;
 }
 .tab {
-  background-color: #ffe6ff;
+  background-color: #a4bbff;
   text-align: center;
 }
 .tab button {
@@ -92,18 +95,18 @@ h2 {
   margin: 0.25em;
   font-size: 1.15em;
   color: black;
-  border-right: 1px solid #ff4dff;
-  border-bottom: 1px solid #ff4dff;
-  background-color: #ffb3ff;
+  border-right: 1px solid #0b48ff;
+  border-bottom: 1px solid #0b48ff;
+  background-color: #7195ff;
   text-decoration: none;
   cursor: pointer;
 }
 .note a.button:hover {
-  border-top: 1px solid #ff4dff;
-  border-left: 1px solid #ff4dff;
+  border-top: 1px solid #0b48ff;
+  border-left: 1px solid #0b48ff;
   border-right: 0;
   border-bottom: 0;
-  background-color: #ffb3ff;
+  background-color: #7195ff;
 }
 table {
   border-collapse: collapse;
@@ -113,7 +116,7 @@ table tr:nth-child(even) {
   background-color: #eee;
 }
 table tr:hover {
-  background: #ffffff;
+  background: #d8e1ff;
 }
 td {
   text-align: left;
