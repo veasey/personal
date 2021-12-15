@@ -1,5 +1,6 @@
 $( document ).ready(function() {
   displayEmail();
+  displayTelephoneNo();
   displayQuote();
 });
 
@@ -9,7 +10,15 @@ function displayEmail() {
   var email = 'gmail';
   var fullemail = first + '.' + second + '@' + email + '.com';
   var link = '<a mailto:"'+fullemail+'">'+fullemail+'</a>';
-  $('.email').html('<p>' + link + '</p>');
+  $('.email').html(link);
+}
+
+function displayTelephoneNo() {
+  var first = '078';
+  var second = '438';
+  var third = '69367';
+  var fullNo = first + second + third;
+  $('.telephone').html(fullNo);
 }
 
 function displayQuote() {
