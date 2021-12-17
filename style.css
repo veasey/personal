@@ -1,0 +1,30 @@
+h1 { 
+    color: #333; margin-bottom: 0 !important;
+}
+
+.bg-primary, a { 
+    color: #ec5263 
+}
+
+.btn-primary { 
+    background-color: #ec5263; border-color: #f47484 
+}
+
+.btn-primary:hover { 
+    background-color: #f47484; border-color: #f47484 
+}
+a:hover { 
+    color: #f47484; text-decoration: none; 
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+ul{ list-style: none; }
+ul li:before{ content:"•"; font-size:10pt; }
+
+footer {
+    background-image: url("code.jpg");
+    color: antiquewhite;
+}

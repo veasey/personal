@@ -10,7 +10,8 @@ function displayEmail() {
   var email = 'gmail';
   var fullemail = first + '.' + second + '@' + email + '.com';
   var link = '<a mailto:"'+fullemail+'">'+fullemail+'</a>';
-  $('.email').html(link);
+  $('span.email').html(link);
+  $('a.email').attr("href", "mailto:" + fullemail);
 }
 
 function displayTelephoneNo() {
@@ -18,7 +19,9 @@ function displayTelephoneNo() {
   var second = '438';
   var third = '69367';
   var fullNo = first + second + third;
-  $('.telephone').html(fullNo);
+  var link = '<a tel:"'+fullNo+'">'+fullNo+'</a>';
+  $('span.telephone').html(link);
+  $('a.telephone').attr("href", "tel:" + fullNo);
 }
 
 function displayQuote() {
