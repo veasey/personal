@@ -13,26 +13,21 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        h1 { color: #333; margin-bottom: 0 !important;}
-        .bg-primary, a { color: #be0000 }
-        .btn-primary { background-color: #be0000; border-color: #be0000 }
-        .btn-primary:hover { background-color: #d80000; border-color: #d80000 }
-        a:hover { color: #d80000; text-decoration: none; }
-      </style>
+    <link rel="stylesheet" href="style.css">
+ 
 
   </head>
   <body>
-    <main>
-
     <!-- header -->
     <div class="container">
 
-      <h1 class="mb-5"><a href="/">Clint Veasey</a></h1>
+      <a href="/about.html" class="text-center">
+        <h1>Clint Veasey</h1>
+        <h2>About Me</h2>
+      </a>
 
-      <div class="row">
+      <div class="row pt-5">
         <div class="col">
-          <h2>Myself in 5 seconds</h2>
           <p>Earning my keep as a <a href="#music">musician</a>, an <a href="https://www.raf.mod.uk/our-organisation/units/90-signals-unit/the-unit/">erector of tents</a> 
             and now a <a href="index.html">web developer</a>.</p>
           <p>I live with my wife and dog in the North East of England.</p>
@@ -78,25 +73,30 @@
       maintain a blog about Salsa events in Newcastle. The achive is available at:
       <a href="https://newcastlesalsaclub.clintveasey.co.uk">newcastlesalsaclub.clintveasey.co.uk</a></p>
 
-      <footer class="footer pt-4 my-md-5 pt-md-5 border-top">
-        <center>
-          <blockquote id="quote" class="blockquote"></blockquote>
-        </center>
+    </div>
+
+    <center>
+      <blockquote id="quote" class="blockquote"></blockquote>
+    </center>
+
+    <footer class="footer pt-4 my-md-5 pt-md-5 border-top">
+      <div class="container">
         <div class="row">
           <div class="col">
-            <div class="email">begone bot</div>
+            <p>
+            <span class="email">begone</span><br />
+            <span class="telephone">bot</span>
+            </p>
           </div>
           <div class="col text-right">
-            <p>Dec 2021</p>
+            <p>17.12.2021</p>
           </div>
         </div>
-      </footer>
-
-    </div>
-  </main>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="clint.min.js"></script>
+    <script type="text/javascript" src="clint.js"></script>
   </body>
 
 </html>
