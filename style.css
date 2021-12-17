@@ -27,4 +27,5 @@ ul li:before{ content:"•"; font-size:10pt; }
 footer {
     background-image: url("code.jpg");
     color: antiquewhite;
+    margin-bottom: 0;
 }
