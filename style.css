@@ -25,8 +25,8 @@ ul{ list-style: none; }
 ul li:before{ content:"•"; font-size:10pt; }
 
 footer {
-    background-image: url("code.jpg");
-    color: antiquewhite;
+    background-color: #ec5263;
+    color: #fff;
     margin-bottom: 0 !important;
 }
 
