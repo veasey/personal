@@ -1,61 +1,78 @@
-h1 { 
-    color: #333; 
-    margin-top: 0.5em;
-    margin-bottom: 0 !important;
+h1 {
+	color: #333;
+	margin-top: 0.5em;
+	margin-bottom: 0 !important;
 }
 
-.bg-primary, a { 
-    color: #ec5263 
+.bg-primary,
+a {
+	color: #ec5263
 }
 
-.btn-primary { 
-    background-color: #ec5263; border-color: #f47484 
+.btn-primary {
+	background-color: #ec5263;
+	border-color: #f47484
 }
 
-.btn-primary:hover { 
-    background-color: #f47484; border-color: #f47484 
+.btn-primary:hover {
+	background-color: #f47484;
+	border-color: #f47484
 }
-a:hover { 
-    color: #f47484; text-decoration: none; 
+
+a:hover {
+	color: #f47484;
+	text-decoration: none;
 }
 
 ul {
-    padding-inline-start: 0px;
+	padding-inline-start: 0px;
 }
 
-ul{ list-style: none; }
-ul li:before{ content:"•"; font-size:10pt; }
+ul {
+	list-style: none;
+}
+
+ul li {
+	padding: 0.25em 0;
+}
+
+ul li:before {
+	content: "•";
+	font-size: 10pt;
+}
 
 .nonlink {
-    color: #ec5263;
+	color: #ec5263;
 }
 
 .nonlink:hover {
-    color: #000;
-    cursor: pointer;
+	color: #000;
+	cursor: pointer;
 }
 
 .btn-primary.btn-lg {
-    margin: 0.5em 0.25em;
+	margin: 0.5em 0.25em;
 }
 
 img {
-    width: 100%;
+	width: 100%;
 }
 
 .articles {
-    background: #222;
-    color: white;
+	background: #222;
+	color: white;
 }
 
 footer {
-    background-color: #ec5263;
-    color: #fff;
-    margin-bottom: 0 !important;
+	background-color: #ec5263;
+	color: #fff;
 }
 
-@media (min-width: 768px) {
-    .mb-md-5, .my-md-5 {
-        margin-bottom: 0 !important;
-    }
+footer a {
+	color: white;
+}
+
+footer a:hover {
+	color: white;
+	text-decoration: underline;
 }
