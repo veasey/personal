@@ -1,5 +1,7 @@
 h1 { 
-    color: #333; margin-bottom: 0 !important;
+    color: #333; 
+    margin-top: 0.5em;
+    margin-bottom: 0 !important;
 }
 
 .bg-primary, a { 
@@ -31,6 +33,19 @@ ul li:before{ content:"•"; font-size:10pt; }
 .nonlink:hover {
     color: #000;
     cursor: pointer;
+}
+
+.btn-primary.btn-lg {
+    margin: 0.5em 0.25em;
+}
+
+img {
+    width: 100%;
+}
+
+.articles {
+    background: #222;
+    color: white;
 }
 
 footer {
