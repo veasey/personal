@@ -10,17 +10,6 @@ function displayEmail() {
     emailButton.setAttribute("href", "mailto:" + fullemail);
   }
 }
-function displayTelephoneNo() {
-  var first = '078';
-  var second = '438';
-  var third = '69367';
-  var fullNo = first + second + third;
-  var link = '<a tel:"'+fullNo+'">'+fullNo+'</a>';
-  document.querySelector("span.telephone").innerHTML = link;
-  if (telButton = document.querySelector("a.telephone")) {
-    document.querySelector("a.telephone").setAttribute("href", "tel:" + fullNo);
-  }
-}
 function displayQuote() {
   var quotes = [
     'Taking it easy since 1990',
@@ -30,5 +19,4 @@ function displayQuote() {
   document.querySelector("#quote").innerHTML = "\"" + quotes[select] + "\"";
 }
 displayEmail();
-displayTelephoneNo();
 displayQuote();
